@@ -1,0 +1,32 @@
+{
+  "name": "@workhard/react-components",
+  "version": "0.0.1",
+  "main": "dist/index",
+  "types": "dist/index",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn run build",
+    "test": "yarn run build"
+  },
+  "peerDependencies": {
+    "react": "~17.0.0"
+  },
+  "dependencies": {
+    "@workhard/react-core": "*",
+    "@workhard/react-utils": "*",
+    "react-bootstrap": "^1.4.3",
+    "recharts": "^2.0.9"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/react": "~17.0.0",
+    "@types/react-bootstrap": "^0.32.25",
+    "react": "~17.0.0",
+    "react-dom": "~17.0.0"
+  }
+}

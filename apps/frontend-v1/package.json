@@ -1,0 +1,65 @@
+{
+  "name": "@workhard/frontend-v1",
+  "description": "Example of using create-react-app in a TS monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/network-connector": "^6.1.3",
+    "@web3-react/walletconnect-connector": "^6.1.6",
+    "@web3-react/walletlink-connector": "^6.1.6",
+    "@workhard/react-components": "*",
+    "@workhard/react-core": "*",
+    "@workhard/react-utils": "*",
+    "bootstrap": "^4.6.0",
+    "bootswatch": "^4.6.0",
+    "mdx.macro": "^0.2.9",
+    "node-sass": "^5.0.0",
+    "react": "~17.0.0",
+    "react-bootstrap": "^1.4.3",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "~17.0.0",
+    "react-helmet": "^6.1.0",
+    "react-html-parser": "^2.0.2",
+    "react-router-dom": "^5.2.0",
+    "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-common-types": "^0.2.34",
+    "@types/node": "~14.0.23",
+    "@types/react": "~17.0.0",
+    "@types/react-bootstrap": "^0.32.25",
+    "@types/react-copy-to-clipboard": "^5.0.0",
+    "@types/react-dom": "~17.0.0",
+    "@types/react-helmet": "^6.1.1",
+    "@types/react-html-parser": "^2.0.1",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.7",
+    "cross-env": "~7.0.2",
+    "fork-ts-checker-webpack-plugin": "~6.2.10",
+    "react-app-rewired": "~2.1.6",
+    "react-scripts": "~4.0.1",
+    "tsconfig-paths-webpack-plugin": "~3.2.0"
+  },
+  "scripts": {
+    "start": "cross-env SKIP_PREFLIGHT_CHECK=true DISABLE_ESLINT_PLUGIN=true react-app-rewired start",
+    "build": "cross-env SKIP_PREFLIGHT_CHECK=true DISABLE_ESLINT_PLUGIN=true react-app-rewired build",
+    "test": "yarn run build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

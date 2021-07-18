@@ -1,0 +1,39 @@
+{
+  "name": "@workhard/react-utils",
+  "version": "0.0.1",
+  "main": "dist/index",
+  "types": "dist/index",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn run build",
+    "test": "yarn run build"
+  },
+  "peerDependencies": {
+    "react": "~17.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@gnosis.pm/safe-core-sdk": "0.1.1",
+    "@gnosis.pm/safe-core-sdk-types": "0.1.1",
+    "@uniswap/sdk-core": "^3.0.0",
+    "@uniswap/v3-core": "^1.0.0",
+    "@uniswap/v3-sdk": "^3.1.0",
+    "@web3-react/core": "^6.1.1",
+    "@workhard/protocol": "1.0.3",
+    "ethers": "^5.0.0",
+    "ipfs-core": "^0.5.4",
+    "mobx": "^5.15.3",
+    "mobx-react": "^6.1.4",
+    "react-toast-notifications": "^2.4.4"
+  },
+  "devDependencies": {
+    "@types/react": "~17.0.0",
+    "react": "~17.0.0",
+    "react-dom": "~17.0.0"
+  }
+}
