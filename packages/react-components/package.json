@@ -1,6 +1,6 @@
 {
   "name": "@workhard/react-components",
-  "version": "0.0.1",
+  "version": "0.1.0-alpha.0",
   "main": "dist/index",
   "types": "dist/index",
   "license": "GPL-3.0",
@@ -15,8 +15,8 @@
     "react": "~17.0.0"
   },
   "dependencies": {
-    "@workhard/react-core": "*",
-    "@workhard/react-utils": "*",
+    "@workhard/react-core": "^0.1.0-alpha.0",
+    "@workhard/react-utils": "^0.1.0-alpha.0",
     "react-bootstrap": "^1.4.3",
     "recharts": "^2.0.9"
   },

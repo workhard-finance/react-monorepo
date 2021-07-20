@@ -1,6 +1,6 @@
 {
   "name": "@workhard/react-core",
-  "version": "0.0.1",
+  "version": "0.1.0-alpha.0",
   "main": "dist/index",
   "types": "dist/index",
   "license": "GPL-3.0",
@@ -22,7 +22,7 @@
     "@uniswap/v3-core": "^1.0.0",
     "@uniswap/v3-sdk": "^3.1.0",
     "@workhard/protocol": "1.0.3",
-    "@workhard/react-utils": "*",
+    "@workhard/react-utils": "^0.1.0-alpha.0",
     "ethers": "^5.0.0",
     "ipfs-core": "^0.5.4",
     "mobx": "^5.15.3",

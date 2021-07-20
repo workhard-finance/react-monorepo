@@ -1,6 +1,6 @@
 {
   "name": "@workhard/react-utils",
-  "version": "0.0.1",
+  "version": "0.1.0-alpha.0",
   "main": "dist/index",
   "types": "dist/index",
   "license": "GPL-3.0",
