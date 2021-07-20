@@ -2,7 +2,7 @@
   "name": "@workhard/frontend-v1",
   "description": "Example of using create-react-app in a TS monorepo",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
