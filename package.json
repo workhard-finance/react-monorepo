@@ -1,6 +1,6 @@
 {
-  "name": "@workhard/react",
-  "description": "Template for setting up a TypeScript monorepo",
+  "name": "@workhard/react-monorepo",
+  "description": "Workhard Dev Kit for DAO Builders",
   "private": true,
   "workspaces": [
     "packages/*",
