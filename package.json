@@ -22,6 +22,8 @@
     "versionup:minor": "lerna version minor --conventional-commits --no-git-tag-version",
     "versionup:premajor": "lerna version premajor --conventional-commits --no-git-tag-version",
     "versionup:major": "lerna version major --conventional-commits --no-git-tag-version",
+    "versionup:prerelease": "lerna version prerelease --conventional-commits --no-git-tag-version",
+    "versionup:release": "lerna version release --conventional-commits --no-git-tag-version",
     "postversionup": "npm run commit-version",
     "postversionup:patch": "npm run commit-version",
     "postversionup:minor": "npm run commit-version",
