@@ -27,7 +27,7 @@ jobs:
       - run: yarn lerna version ${{ github.event.release.tag_name }} --yes --no-git-tag-version
       - run: yarn version --new-version ${{ github.event.release.tag_name }} --no-git-tag-version
       - run: git add . && git commit -m "Release ${{ github.event.release.tag_name }}"
-      - run: yarn lerna publish from-package --yes
+      - run: yarn lerna publish from-package --yes --no-verify-access
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: git checkout -b release/${{ github.event.release.tag_name }}
