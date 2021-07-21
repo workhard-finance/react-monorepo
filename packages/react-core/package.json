@@ -1,5 +1,6 @@
 {
   "name": "@workhard/react-core",
+  "description": "Workhard SDK core",
   "version": "0.1.0-alpha.0",
   "main": "dist/index",
   "types": "dist/index",
