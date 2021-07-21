@@ -3,7 +3,7 @@
     "packages/*",
     "apps/*"
   ],
-  "version": "independent",
+  "version": "0.1.0-alpha.0",
   "useWorkspaces": true,
   "npmClient": "yarn"
 }
