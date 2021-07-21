@@ -1,6 +1,7 @@
 {
   "name": "@workhard/react-utils",
-  "version": "0.1.0-alpha.0",
+  "description": "Utility Lib for WHF app",
+  "version": "0.1.0-alpha.11",
   "main": "dist/index",
   "types": "dist/index",
   "license": "GPL-3.0",
@@ -35,5 +36,6 @@
     "@types/react": "~17.0.0",
     "react": "~17.0.0",
     "react-dom": "~17.0.0"
-  }
+  },
+  "gitHead": "426ee5e0a1eebb510c790c57c8f64c645226eb97"
 }

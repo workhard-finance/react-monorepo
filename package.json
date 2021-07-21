@@ -2,6 +2,7 @@
   "name": "@workhard/react-monorepo",
   "description": "Workhard Dev Kit for DAO Builders",
   "private": true,
+  "version": "0.1.0-alpha.12",
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -10,7 +11,6 @@
     "docs": "doctoc --title '**Table of content**' README.md",
     "clean": "lerna run clean",
     "build": "lerna run build",
-    "pub": "lerna publish",
     "test": "lerna run test",
     "lint": "eslint --ext js,ts,tsx .",
     "start": "lerna run start --scope=@workhard/frontend-v1 --stream"
@@ -23,5 +23,8 @@
     "lerna": "^4.0.0",
     "react": "~17.0.0",
     "typescript": "~4.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

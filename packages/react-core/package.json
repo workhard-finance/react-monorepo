@@ -1,6 +1,7 @@
 {
   "name": "@workhard/react-core",
-  "version": "0.1.0-alpha.0",
+  "description": "Workhard SDK core",
+  "version": "0.1.0-alpha.11",
   "main": "dist/index",
   "types": "dist/index",
   "license": "GPL-3.0",
@@ -22,7 +23,7 @@
     "@uniswap/v3-core": "^1.0.0",
     "@uniswap/v3-sdk": "^3.1.0",
     "@workhard/protocol": "1.0.3",
-    "@workhard/react-utils": "^0.1.0-alpha.0",
+    "@workhard/react-utils": "^0.1.0-alpha.11",
     "ethers": "^5.0.0",
     "ipfs-core": "^0.5.4",
     "mobx": "^5.15.3",
@@ -33,5 +34,6 @@
     "@types/react": "~17.0.0",
     "react": "~17.0.0",
     "react-dom": "~17.0.0"
-  }
+  },
+  "gitHead": "426ee5e0a1eebb510c790c57c8f64c645226eb97"
 }
