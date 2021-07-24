@@ -5,7 +5,16 @@ import { IPFSProvider, useIPFS } from "./IPFSProvider";
 import { WorkhardCtxProvider } from "./WorkhardCtxProvider";
 import { BlockNumberProvider } from "./BlockNumberProvider";
 
-const Web3Workhard = ({
+const getLibrary = (
+  provider: providers.ExternalProvider | providers.JsonRpcFetchFunc,
+  _: any
+) => {
+  const library = new providers.Web3Provider(provider); // this will vary according to whether you use e.g. ethers or web3.js
+  library.pollingInterval = 12000;
+  return library;
+};
+
+export const WorkhardApp = ({
   daoId,
   children,
 }: {
@@ -21,16 +30,7 @@ const Web3Workhard = ({
   );
 };
 
-const getLibrary = (
-  provider: providers.ExternalProvider | providers.JsonRpcFetchFunc,
-  _: any
-) => {
-  const library = new providers.Web3Provider(provider); // this will vary according to whether you use e.g. ethers or web3.js
-  library.pollingInterval = 12000;
-  return library;
-};
-
-export const WorkhardApp = ({
+export const Web3WorkhardApp = ({
   children,
   daoId,
 }: {
@@ -42,7 +42,7 @@ export const WorkhardApp = ({
     <Web3ReactProvider getLibrary={getLibrary}>
       <BlockNumberProvider>
         <IPFSProvider>
-          <Web3Workhard daoId={daoId}>{children}</Web3Workhard>
+          <WorkhardApp daoId={daoId}>{children}</WorkhardApp>
         </IPFSProvider>
       </BlockNumberProvider>
     </Web3ReactProvider>

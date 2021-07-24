@@ -1,5 +1,5 @@
 import React from "react";
-import { WorkhardApp } from "@workhard/react-core";
+import { Web3WorkhardApp } from "@workhard/react-core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Mine from "./pages/mine";
@@ -19,7 +19,7 @@ import { Toast } from "@workhard/react-components";
 
 function App() {
   return (
-    <WorkhardApp daoId={0}>
+    <Web3WorkhardApp daoId={0}>
       <ToastProvider
         components={{ Toast }}
         autoDismiss={true}
@@ -49,7 +49,7 @@ function App() {
           </Switch>
         </Router>
       </ToastProvider>
-    </WorkhardApp>
+    </Web3WorkhardApp>
   );
 }
 
