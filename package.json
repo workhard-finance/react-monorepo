@@ -2,7 +2,7 @@
   "name": "@workhard/react-monorepo",
   "description": "Workhard Dev Kit for DAO Builders",
   "private": true,
-  "version": "v0.1.0",
+  "version": "0.1.1",
   "workspaces": [
     "packages/*",
     "apps/*"
