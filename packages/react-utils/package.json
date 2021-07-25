@@ -1,7 +1,7 @@
 {
   "name": "@workhard/react-utils",
   "description": "Utility Lib for WHF app",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index",
   "types": "dist/index",
   "license": "GPL-3.0",
