@@ -4619,6 +4619,16 @@
     dotenv "^8.2.0"
     lowdb "^1.0.0"
 
+"@workhard/protocol@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@workhard/protocol/-/protocol-1.0.4.tgz#6cc44b3bde3dfd865c8930aaf40568821e7901d2"
+  integrity sha512-RwL9qjzQ2H2QqqWAUCvc4AH01jIqrH9PKYlD4LL+7sqHRXNgUCCOKo8oAYgarjfN8R8SaJI0F76jWE0VQ7oXBw==
+  dependencies:
+    "@openzeppelin/contracts" "3.4.0-solc-0.7 "
+    "@uniswap/v2-core" "^1.0.1"
+    dotenv "^8.2.0"
+    lowdb "^1.0.0"
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"

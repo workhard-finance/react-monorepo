@@ -42,8 +42,9 @@ export function useWorkhard() {
 export const WorkhardCtxProvider: React.FC<{
   daoId: number;
   web3: Web3ReactContextInterface<providers.Web3Provider>;
+  pool2Factory?: string;
   ipfs?: IPFS;
-}> = ({ children, daoId, ipfs, web3 }) => {
+}> = ({ children, daoId, ipfs, web3, pool2Factory }) => {
   const [context, setContext] = useState<{ workhard?: Workhard }>({});
 
   const getContext = async (
@@ -63,7 +64,7 @@ export const WorkhardCtxProvider: React.FC<{
     );
     const [dao, periphery, daoName, daoSymbol] = await Promise.all([
       workhardContracts.getDAO(daoId),
-      workhardContracts.getPeriphery(daoId),
+      workhardContracts.getPeriphery(daoId, { pool2Factory }),
       workhardContracts.project.nameOf(daoId),
       workhardContracts.project.symbolOf(daoId),
     ]);
